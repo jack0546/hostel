@@ -10,27 +10,27 @@ const hostels = [
   { id: 1, name: "Golden View Hostel", location: "Koforidua, near KTU", price: 3500, distance: 1.2, roomType: "2-in-1",
     description: "Comfortable student hostel located close to campus with easy access to transportation and shops.",
     facilities: ["Water", "Electricity", "Wi-Fi", "Kitchen", "Washroom", "Parking"],
-    images: ["images/hostel1-1.jpg", "images/hostel1-2.jpg", "images/hostel1-3.jpg", "images/hostel1-4.jpg", "images/hostel1-5.jpg"] },
+    images: ["A1.jpeg", "A2.jpeg", "A3.jpeg", "A4.jpeg", "A5.jpeg"] },
   { id: 2, name: "Blue Haven Lodge", location: "Effiduase, Koforidua", price: 2800, distance: 0.6, roomType: "4-in-1",
     description: "Affordable shared rooms a short walk from the lecture halls, with a quiet reading area.",
     facilities: ["Water", "Electricity", "Wi-Fi", "Washroom"],
-    images: ["images/hostel2-1.jpg", "images/hostel2-2.jpg", "images/hostel2-3.jpg"] },
+    images: ["A6.jpeg", "A7.jpeg", "A8.jpeg", "A9.jpeg"] },
   { id: 3, name: "Scholars' Court", location: "Adweso, Koforidua", price: 5200, distance: 2.4, roomType: "Single",
     description: "Private single rooms with a study desk, ideal for students who want peace and quiet.",
     facilities: ["Water", "Electricity", "Wi-Fi", "Kitchen", "Washroom", "Security", "Parking"],
-    images: ["images/hostel3-1.jpg", "images/hostel3-2.jpg", "images/hostel3-3.jpg", "images/hostel3-4.jpg"] },
+    images: ["B1.jpeg", "B2.jpeg", "B3.jpeg", "B4.jpeg"] },
   { id: 4, name: "Unity Hostel", location: "Zongo, Koforidua", price: 2200, distance: 3.1, roomType: "5-in-1",
     description: "Budget-friendly hostel with a friendly community atmosphere and regular transport to campus.",
     facilities: ["Water", "Electricity", "Washroom"],
-    images: ["images/hostel4-1.jpg", "images/hostel4-2.jpg", "images/hostel4-3.jpg"] },
+    images: ["A1.jpeg", "A2.jpeg", "A3.jpeg"] },
   { id: 5, name: "Royal Palms Hostel", location: "Koforidua, near KTU", price: 4300, distance: 0.8, roomType: "3-in-1",
     description: "Modern rooms, tiled floors and a spacious compound, just minutes from the main gate.",
     facilities: ["Water", "Electricity", "Wi-Fi", "Kitchen", "Washroom", "Security"],
-    images: ["images/hostel5-1.jpg", "images/hostel5-2.jpg", "images/hostel5-3.jpg", "images/hostel5-4.jpg", "images/hostel5-5.jpg"] },
+    images: ["A4.jpeg", "A5.jpeg", "A6.jpeg", "A7.jpeg", "A8.jpeg"] },
   { id: 6, name: "Campus Edge Residence", location: "Old Estate, Koforidua", price: 3900, distance: 0.3, roomType: "2-in-1",
     description: "The closest hostel to campus. Wake up ten minutes before class and still make it.",
     facilities: ["Water", "Electricity", "Wi-Fi", "Washroom", "Security"],
-    images: ["images/hostel6-1.jpg", "images/hostel6-2.jpg", "images/hostel6-3.jpg"] }
+    images: ["A9.jpeg", "B1.jpeg", "B2.jpeg"] }
 ];
 
 /* ---------- Settings ---------- */
