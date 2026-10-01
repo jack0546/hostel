@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostel Finder – Student Hostels Close to Campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">🏠 HOSTEL FINDER</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#hostels">Hostels</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Find Your Perfect Student Hostel</h1>
+      <p>Discover affordable and comfortable hostels close to campus.</p>
+      <div class="hero-search">
+        <input type="text" id="heroSearch" placeholder="Search by hostel name, location or room type...">
+        <button id="heroBtn">Find Hostel</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTING -->
+  <main class="container section" id="hostels">
+    <h2>Available Hostels</h2>
+    <p class="muted">Browse student hostels, compare prices, check distance from campus and contact hostel owners directly.</p>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search hostels...">
+      <select id="roomFilter" aria-label="Room type">
+        <option value="All">Room: All</option>
+        <option>Single</option>
+        <option>2-in-1</option>
+        <option>3-in-1</option>
+        <option>4-in-1</option>
+        <option>5-in-1</option>
+      </select>
+      <select id="priceFilter" aria-label="Price">
+        <option value="all">Price: Any</option>
+        <option value="2500">Up to GH₵2,500</option>
+        <option value="3500">Up to GH₵3,500</option>
+        <option value="4500">Up to GH₵4,500</option>
+        <option value="6000">Up to GH₵6,000</option>
+      </select>
+      <select id="distanceFilter" aria-label="Distance">
+        <option value="all">Distance: Any</option>
+        <option value="0.5">Within 0.5 km</option>
+        <option value="1">Within 1 km</option>
+        <option value="2">Within 2 km</option>
+        <option value="5">Within 5 km</option>
+      </select>
+      <select id="sortSelect" aria-label="Sort by">
+        <option value="default">Sort by: Default</option>
+        <option value="priceAsc">Lowest Price</option>
+        <option value="priceDesc">Highest Price</option>
+        <option value="distAsc">Nearest to Campus</option>
+        <option value="distDesc">Farthest from Campus</option>
+        <option value="nameAsc">Name A-Z</option>
+        <option value="nameDesc">Name Z-A</option>
+      </select>
+    </div>
+
+    <p class="count" id="resultCount"></p>
+    <div class="grid" id="hostelGrid"></div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="section alt" id="about">
+    <div class="container narrow">
+      <h2>About Hostel Finder</h2>
+      <p class="muted">Hostel Finder helps university students compare hostels near campus and book directly with the owner on WhatsApp. No middlemen, no hidden fees.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container narrow">
+      <h2>Contact</h2>
+      <p class="muted">Questions about a hostel or booking? Chat with us on WhatsApp.</p>
+      <a class="btn whatsapp" href="https://wa.me/233595943783" target="_blank" rel="noopener">📞 Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>HOSTEL FINDER</strong>
+        <p>Helping students find comfortable and affordable accommodation close to campus.</p>
+        <p>WhatsApp: +233 59 594 3783</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#hostels">Hostels</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <p class="copy">© 2026 Hostel Finder. All Rights Reserved.</p>
+  </footer>
+
+  <!-- DETAILS MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="close" id="modalClose" aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close image">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <img id="lbImg" alt="Enlarged hostel photo">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">›</button>
+    <span class="lb-count" id="lbCount"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
